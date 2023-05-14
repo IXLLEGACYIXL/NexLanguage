@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V4C2aEWJocm/Hyd6xVMLlR5LPeFkatrFeQ/gYHOOCBYZzOMPhQobAEMFbLQmH+xZee1KhqVlZOLhVIhQy5+3aQ==",
+  "dgSpecHash": "aVxd9M+o6cyM1tzSr8YgqymF9fvuxkofXCTQj2p+rYSarzO5qWDOJ0XNHbdHErIjgXodaZsqA9H2HYYebMQR/w==",
   "success": true,
-  "projectFilePath": "c:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj",
+  "projectFilePath": "C:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ixlle\\.nuget\\packages\\antlr4.runtime\\4.6.6\\antlr4.runtime.4.6.6.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
@@ -66,11 +66,7 @@
     "C:\\Users\\ixlle\\.nuget\\packages\\system.threading.tasks.extensions\\4.0.0\\system.threading.tasks.extensions.4.0.0.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
-    "C:\\Users\\ixlle\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
-    "C:\\Users\\ixlle\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.13\\microsoft.netcore.app.ref.6.0.13.nupkg.sha512",
-    "C:\\Users\\ixlle\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.13\\microsoft.windowsdesktop.app.ref.6.0.13.nupkg.sha512",
-    "C:\\Users\\ixlle\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.13\\microsoft.aspnetcore.app.ref.6.0.13.nupkg.sha512",
-    "C:\\Users\\ixlle\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.13\\microsoft.netcore.app.host.win-x64.6.0.13.nupkg.sha512"
+    "C:\\Users\\ixlle\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512"
   ],
   "logs": []
 }

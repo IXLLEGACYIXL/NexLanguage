@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,14 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Test.peg" />
+  </ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Antlr4.Runtime" Version="4.6.6" />
 		<PackageReference Include="Pegasus" Version="4.1.0" />
 
 	</ItemGroup>
 	<ItemGroup>
-	  <None Update="Test.peg">
-	    <Generator>PegGrammar</Generator>
-	  </None>
+	  <PegGrammar Include="Test.peg" />
 	</ItemGroup>
 </Project>

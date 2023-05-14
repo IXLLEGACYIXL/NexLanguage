@@ -10,11 +10,11 @@ declaration
 assignment
   = variable:ID "=" datatype:type "(" ")" ";"
 
-datatype "data type"
+type
   = "int" / "Int32"
 
-ID "identifier"
+ID
   = [a-zA-Z]+
 
-_ "whitespace"
+_
   = [ \t\r\n]*
