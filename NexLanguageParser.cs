@@ -280,7 +280,7 @@ public partial class NexLanguageParser : Parser {
 			}
 			else {
 				ErrorHandler.ReportMatch(this);
-			    Consume();
+				Consume();
 			}
 			}
 		}
