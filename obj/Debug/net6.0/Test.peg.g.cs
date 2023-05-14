@@ -8,69 +8,44 @@
 // -----------------------------------------------------------------------
 
 namespace
-Parsers
+#line 1 "C:\Users\ixlle\source\repos\NexLanguage\Test.peg"
+           PegExampless
+#line default
 {
     using System;
     using System.Collections.Generic;
     using Pegasus.Common;
 
     /// <summary>
-    ///  Parses a string according to the rules of the <see cref="Parser" /> grammar.
+    ///  Parses a string according to the rules of the <see cref="ExpressionParser" /> grammar.
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCode("Pegasus", "4.1.0.0")]
     public
     partial class
-    Parser
+    #line 2 "C:\Users\ixlle\source\repos\NexLanguage\Test.peg"
+           ExpressionParser
+    #line default
     {
 
         /// <summary>
-        ///  Parses a string according to the rules of the <see cref="Parser" /> grammar.
+        ///  Parses a string according to the rules of the <see cref="ExpressionParser" /> grammar.
         /// </summary>
         /// <param name="subject">The parsing subject.</param>
         /// <param name="fileName">The optional file name to use in error messages.</param>
-        /// <returns>The <see cref="IList{string}" /> parsed from <paramref name="subject" />.</returns>
+        /// <returns>The <see cref="string" /> parsed from <paramref name="subject" />.</returns>
         /// <exception cref="FormatException">
         ///  Thrown when parsing fails against <paramref name="subject"/>.  The exception's <code>Data["cursor"]</code> will be set with the cursor where the fatal error occurred.
         /// </exception>
-        public IList<string> Parse(string subject, string fileName = null)
+        public string Parse(string subject, string fileName = null)
         {
             var cursor = new Cursor(subject, 0, fileName);
-            return this.StartRuleHelper(cursor, this.start, "start").Value;
+            return this.StartRuleHelper(cursor, this.program, "program").Value;
         }
 
-        private IParseResult<IList<string>> start(ref Cursor cursor)
+        private IParseResult<string> program(ref Cursor cursor)
         {
-            IParseResult<IList<string>> r0 = null;
-            r0 = this.program(ref cursor);
-            return r0;
-        }
-
-        private IParseResult<IList<string>> program(ref Cursor cursor)
-        {
-            IParseResult<IList<string>> r0 = null;
-            var startCursor0 = cursor;
-            var l0 = new List<string>();
-            while (true)
-            {
-                IParseResult<string> r1 = null;
-                if (r1 == null)
-                {
-                    r1 = this.declaration(ref cursor);
-                }
-                if (r1 == null)
-                {
-                    r1 = this.assignment(ref cursor);
-                }
-                if (r1 != null)
-                {
-                    l0.Add(r1.Value);
-                }
-                else
-                {
-                    break;
-                }
-            }
-            r0 = this.ReturnHelper<IList<string>>(startCursor0, ref cursor, state => l0.AsReadOnly());
+            IParseResult<string> r0 = null;
+            r0 = this.declaration(ref cursor);
             return r0;
         }
 
@@ -79,29 +54,22 @@ Parsers
             IParseResult<string> r0 = null;
             var startCursor0 = cursor;
             IParseResult<string> r1 = null;
-            var datatypeStart = cursor;
-            r1 = this.type(ref cursor);
-            var datatypeEnd = cursor;
-            var datatype = ValueOrDefault(r1);
+            r1 = this.datatype(ref cursor);
             if (r1 != null)
             {
                 IParseResult<IList<string>> r2 = null;
-                var variableStart = cursor;
                 r2 = this.ID(ref cursor);
-                var variableEnd = cursor;
-                var variable = ValueOrDefault(r2);
                 if (r2 != null)
                 {
                     IParseResult<string> r3 = null;
                     r3 = this.ParseLiteral(ref cursor, ";");
                     if (r3 != null)
                     {
-                        {
-                            var len = cursor.Location - startCursor0.Location;
-                            r0 = this.ReturnHelper<string>(startCursor0, ref cursor, state =>
-                                state.Subject.Substring(startCursor0.Location, len)
-                                );
-                        }
+                        r0 = this.ReturnHelper<string>(startCursor0, ref cursor, state =>
+                            #line 8 "C:\Users\ixlle\source\repos\NexLanguage\Test.peg"
+                      Console.WriteLine("help meeee")
+                            #line default
+                            );
                     }
                     else
                     {
@@ -120,80 +88,7 @@ Parsers
             return r0;
         }
 
-        private IParseResult<string> assignment(ref Cursor cursor)
-        {
-            IParseResult<string> r0 = null;
-            var startCursor0 = cursor;
-            IParseResult<IList<string>> r1 = null;
-            var variableStart = cursor;
-            r1 = this.ID(ref cursor);
-            var variableEnd = cursor;
-            var variable = ValueOrDefault(r1);
-            if (r1 != null)
-            {
-                IParseResult<string> r2 = null;
-                r2 = this.ParseLiteral(ref cursor, "=");
-                if (r2 != null)
-                {
-                    IParseResult<string> r3 = null;
-                    var datatypeStart = cursor;
-                    r3 = this.type(ref cursor);
-                    var datatypeEnd = cursor;
-                    var datatype = ValueOrDefault(r3);
-                    if (r3 != null)
-                    {
-                        IParseResult<string> r4 = null;
-                        r4 = this.ParseLiteral(ref cursor, "(");
-                        if (r4 != null)
-                        {
-                            IParseResult<string> r5 = null;
-                            r5 = this.ParseLiteral(ref cursor, ")");
-                            if (r5 != null)
-                            {
-                                IParseResult<string> r6 = null;
-                                r6 = this.ParseLiteral(ref cursor, ";");
-                                if (r6 != null)
-                                {
-                                    {
-                                        var len = cursor.Location - startCursor0.Location;
-                                        r0 = this.ReturnHelper<string>(startCursor0, ref cursor, state =>
-                                            state.Subject.Substring(startCursor0.Location, len)
-                                            );
-                                    }
-                                }
-                                else
-                                {
-                                    cursor = startCursor0;
-                                }
-                            }
-                            else
-                            {
-                                cursor = startCursor0;
-                            }
-                        }
-                        else
-                        {
-                            cursor = startCursor0;
-                        }
-                    }
-                    else
-                    {
-                        cursor = startCursor0;
-                    }
-                }
-                else
-                {
-                    cursor = startCursor0;
-                }
-            }
-            else
-            {
-                cursor = startCursor0;
-            }
-            return r0;
-        }
-
-        private IParseResult<string> type(ref Cursor cursor)
+        private IParseResult<string> datatype(ref Cursor cursor)
         {
             IParseResult<string> r0 = null;
             if (r0 == null)

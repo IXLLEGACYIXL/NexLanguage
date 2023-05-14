@@ -1,16 +1,14 @@
-start
-  = program
+@namespace PegExampless
+@classname ExpressionParser
 
 program
-  = (declaration / assignment)*
+  = (declaration)
 
 declaration
-  = datatype:type variable:ID ";"
+  = datatype ID ';' { Console.WriteLine("help meeee")}
 
-assignment
-  = variable:ID "=" datatype:type "(" ")" ";"
 
-type
+datatype
   = "int" / "Int32"
 
 ID
