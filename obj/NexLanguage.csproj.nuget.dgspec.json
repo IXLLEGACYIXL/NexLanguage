@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj": {}
+    "c:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj": {
+    "c:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj",
+        "projectUniqueName": "c:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj",
         "projectName": "NexLanguage",
-        "projectPath": "C:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj",
+        "projectPath": "c:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj",
         "packagesPath": "C:\\Users\\ixlle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ixlle\\source\\repos\\NexLanguage\\obj\\",
+        "outputPath": "c:\\Users\\ixlle\\source\\repos\\NexLanguage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\ixlle\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
@@ -47,6 +47,10 @@
             "Antlr4.Runtime": {
               "target": "Package",
               "version": "[4.6.6, )"
+            },
+            "Pegasus": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             }
           },
           "imports": [

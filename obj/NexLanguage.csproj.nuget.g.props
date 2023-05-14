@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\ixlle\.nuget\packages\" />
     <SourceRoot Include="C:\Users\ixlle\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgPegasus Condition=" '$(PkgPegasus)' == '' ">C:\Users\ixlle\.nuget\packages\pegasus\4.1.0</PkgPegasus>
+  </PropertyGroup>
 </Project>

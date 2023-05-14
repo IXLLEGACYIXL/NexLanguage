@@ -1,0 +1,20 @@
+start
+  = program
+
+program
+  = (declaration / assignment)*
+
+declaration
+  = datatype:type variable:ID ";"
+
+assignment
+  = variable:ID "=" datatype:type "(" ")" ";"
+
+datatype "data type"
+  = "int" / "Int32"
+
+ID "identifier"
+  = [a-zA-Z]+
+
+_ "whitespace"
+  = [ \t\r\n]*

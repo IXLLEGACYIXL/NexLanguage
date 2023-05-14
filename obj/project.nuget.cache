@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "pscxH4IJzdyu7/QoP9SN9TpKsEs3/x4BU7FzEPx2Ia5JXxenxGgNrKSOQf7nrb7Pa01Qg+huNn6YmPAS57U/Jg==",
+  "dgSpecHash": "V4C2aEWJocm/Hyd6xVMLlR5LPeFkatrFeQ/gYHOOCBYZzOMPhQobAEMFbLQmH+xZee1KhqVlZOLhVIhQy5+3aQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj",
+  "projectFilePath": "c:\\Users\\ixlle\\source\\repos\\NexLanguage\\NexLanguage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ixlle\\.nuget\\packages\\antlr4.runtime\\4.6.6\\antlr4.runtime.4.6.6.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\microsoft.win32.primitives\\4.0.1\\microsoft.win32.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
+    "C:\\Users\\ixlle\\.nuget\\packages\\pegasus\\4.1.0\\pegasus.4.1.0.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
     "C:\\Users\\ixlle\\.nuget\\packages\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",

@@ -8,6 +8,12 @@
   </PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Antlr4.Runtime" Version="4.6.6" />
+		<PackageReference Include="Pegasus" Version="4.1.0" />
 
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="Test.peg">
+	    <Generator>PegGrammar</Generator>
+	  </None>
 	</ItemGroup>
 </Project>
