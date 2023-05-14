@@ -1,0 +1,5 @@
+C:\Users\ixlle\source\repos\NexLanguage\obj\Debug\net6.0\NexLanguage.csproj.AssemblyReference.cache
+C:\Users\ixlle\source\repos\NexLanguage\obj\Debug\net6.0\NexLanguage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ixlle\source\repos\NexLanguage\obj\Debug\net6.0\NexLanguage.AssemblyInfoInputs.cache
+C:\Users\ixlle\source\repos\NexLanguage\obj\Debug\net6.0\NexLanguage.AssemblyInfo.cs
+C:\Users\ixlle\source\repos\NexLanguage\obj\Debug\net6.0\NexLanguage.csproj.CoreCompileInputs.cache
